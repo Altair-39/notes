@@ -1,0 +1,464 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>WNotes Documentation</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="terminal">
+      <div class="terminal-header">
+        <div class="terminal-title">notes-docs@terminal:~</div>
+        <div class="terminal-controls">
+          <div class="control close"></div>
+          <div class="control minimize"></div>
+          <div class="control maximize"></div>
+        </div>
+      </div>
+      <div class="terminal-body" id="terminalBody">
+        <div class="output">Welcome to my Notes</div>
+        <div class="output">
+          Type 'help' for available commands or use the navigation menu
+        </div>
+        <div class="output"></div>
+
+        <div class="nav-menu">
+          <div class="nav-item active" data-section="welcome">Welcome</div>
+          <div class="nav-item" data-section="bachelor">Bachelor</div>
+          <div class="nav-item" data-section="master">Master</div>
+          <div class="nav-item" data-section="extra">Extra</div>
+          <div class="nav-item" data-section="commands">Commands</div>
+        </div>
+
+        <!-- Welcome Section -->
+        <div id="welcome-section" class="section">
+          <div class="output">
+            <span class="prompt-user">user@docs</span
+            ><span class="prompt-symbol">:~$</span>
+            <span class="command">cat welcome.txt</span>
+          </div>
+          <div class="output">=========================================</div>
+          <div class="output">NOTES DOCUMENTATION</div>
+          <div class="output">=========================================</div>
+          <div class="output">
+            This terminal interface provides documentation for my notes.
+          </div>
+          <div class="output">
+            Use the navigation menu above or type commands to explore.
+          </div>
+          <div class="output">Available sections:</div>
+          <div class="output">
+            - <span class="directory">bachelor</span>: Bachelor notes
+          </div>
+          <div class="output">
+            - <span class="directory">master</span>: Master notes
+          </div>
+          <div class="output">
+            - <span class="directory">extra</span>: Extra notes
+          </div>
+          <div class="output">
+            - <span class="directory">commands</span>: Available terminal
+            commands
+          </div>
+        </div>
+
+        <!-- Bachelor Section -->
+        <div id="bachelor-section" class="section hidden">
+          <div class="section-title">BACHELOR NOTES</div>
+
+          <div class="output">
+            <span class="prompt-user">user@docs</span
+            ><span class="prompt-symbol">:~$</span>
+            <span class="command">bachelor --list</span>
+          </div>
+
+          <div class="pdf-preview-container">
+            <div class="pdf-card">
+              <div class="pdf-preview">
+                <div class="pdf-cover cover-lpp">
+                  <div class="pdf-cover-header">PDF</div>
+                  <div class="pdf-cover-body">
+                    <div class="pdf-cover-title">LPP</div>
+                    <div class="pdf-cover-subject">
+                      Programmazione Funzionale
+                    </div>
+                    <div class="pdf-cover-pages">43 pages</div>
+                  </div>
+                  <div class="pdf-cover-footer">2023</div>
+                </div>
+              </div>
+              <div class="pdf-info">
+                <div class="pdf-title">
+                  Linguaggi e Paradigmi di Programmazione
+                </div>
+                <div class="pdf-meta">
+                  <span>43 pages</span>
+                </div>
+                <button class="download-btn" data-filename="LPP.pdf">
+                  Download PDF
+                </button>
+              </div>
+            </div>
+
+            <div class="pdf-card">
+              <div class="pdf-preview">
+                <div class="pdf-cover cover-mfi">
+                  <div class="pdf-cover-header">PDF</div>
+                  <div class="pdf-cover-body">
+                    <div class="pdf-cover-title">MFI</div>
+                    <div class="pdf-cover-subject">Theorems</div>
+                    <div class="pdf-cover-pages">62 pages</div>
+                  </div>
+                  <div class="pdf-cover-footer">2023</div>
+                </div>
+              </div>
+              <div class="pdf-info">
+                <div class="pdf-title">Metodi Formali dell'Informatica</div>
+                <div class="pdf-meta">
+                  <span>62 pages</span>
+                </div>
+                <button class="download-btn" data-filename="MFI.pdf">
+                  Download PDF
+                </button>
+              </div>
+            </div>
+
+            <div class="pdf-card">
+              <div class="pdf-preview">
+                <div class="pdf-cover cover-prefit">
+                  <div class="pdf-cover-header">PDF</div>
+                  <div class="pdf-cover-body">
+                    <div class="pdf-cover-title">MTDI</div>
+                    <div class="pdf-cover-subject">Didattica</div>
+                    <div class="pdf-cover-pages">43 pages</div>
+                  </div>
+                  <div class="pdf-cover-footer">2023</div>
+                </div>
+              </div>
+              <div class="pdf-info">
+                <div class="pdf-title">
+                  Metodologie e Tecnologie Didattiche per l'Informatica
+                </div>
+                <div class="pdf-meta">
+                  <span>43 pages</span>
+                </div>
+                <button class="download-btn" data-filename="PREFIT.pdf">
+                  Download PDF
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Master Section -->
+        <div id="master-section" class="section hidden">
+          <div class="section-title">MASTER NOTES</div>
+
+          <div class="output">
+            <span class="prompt-user">user@docs</span
+            ><span class="prompt-symbol">:~$</span>
+            <span class="command">master --list</span>
+          </div>
+
+          <div class="pdf-preview-container">
+            <div class="pdf-card">
+              <div class="pdf-preview">
+                <div class="pdf-cover cover-aint">
+                  <div class="pdf-cover-header">PDF</div>
+                  <div class="pdf-cover-body">
+                    <div class="pdf-cover-title">AINT</div>
+                    <div class="pdf-cover-subject">Sistemi Multiagente</div>
+                    <div class="pdf-cover-pages">84 pages</div>
+                  </div>
+                  <div class="pdf-cover-footer">2025</div>
+                </div>
+              </div>
+              <div class="pdf-info">
+                <div class="pdf-title">Agenti Intelligenti</div>
+                <div class="pdf-meta">
+                  <span>84 pages</span>
+                </div>
+                <button class="download-btn" data-filename="AINT.pdf">
+                  Download PDF
+                </button>
+              </div>
+            </div>
+
+            <div class="pdf-card">
+              <div class="pdf-preview">
+                <div class="pdf-cover cover-arch2">
+                  <div class="pdf-cover-header">PDF</div>
+                  <div class="pdf-cover-body">
+                    <div class="pdf-cover-title">ARCH2</div>
+                    <div class="pdf-cover-subject">CPU/GPU</div>
+                    <div class="pdf-cover-pages">116 pages</div>
+                  </div>
+                  <div class="pdf-cover-footer">2024</div>
+                </div>
+              </div>
+              <div class="pdf-info">
+                <div class="pdf-title">Architetture degli Elaboratori II</div>
+                <div class="pdf-meta">
+                  <span>116 pages</span>
+                </div>
+                <button class="download-btn" data-filename="ARCH2.pdf">
+                  Download PDF
+                </button>
+              </div>
+            </div>
+
+            <div class="pdf-card">
+              <div class="pdf-preview">
+                <div class="pdf-cover cover-esp">
+                  <div class="pdf-cover-header">PDF</div>
+                  <div class="pdf-cover-body">
+                    <div class="pdf-cover-title">ESP</div>
+                    <div class="pdf-cover-subject">Etica</div>
+                    <div class="pdf-cover-pages">25 pages</div>
+                  </div>
+                  <div class="pdf-cover-footer">2025</div>
+                </div>
+              </div>
+              <div class="pdf-info">
+                <div class="pdf-title">Etica, Società e Privacy - Etica</div>
+                <div class="pdf-meta">
+                  <span>25 pages</span>
+                </div>
+                <button class="download-btn" data-filename="Etica.pdf">
+                  Download PDF
+                </button>
+              </div>
+            </div>
+
+            <div class="pdf-card">
+              <div class="pdf-preview">
+                <div class="pdf-cover cover-esp">
+                  <div class="pdf-cover-header">PDF</div>
+                  <div class="pdf-cover-body">
+                    <div class="pdf-cover-title">ESP</div>
+                    <div class="pdf-cover-subject">Privacy</div>
+                    <div class="pdf-cover-pages">57 pages</div>
+                  </div>
+                  <div class="pdf-cover-footer">2025</div>
+                </div>
+              </div>
+              <div class="pdf-info">
+                <div class="pdf-title">ESP - Privacy</div>
+                <div class="pdf-meta">
+                  <span>57 pages</span>
+                </div>
+                <button class="download-btn" data-filename="Privacy.pdf">
+                  Download PDF
+                </button>
+              </div>
+            </div>
+
+            <div class="pdf-card">
+              <div class="pdf-preview">
+                <div class="pdf-cover cover-ialab">
+                  <div class="pdf-cover-header">PDF</div>
+                  <div class="pdf-cover-body">
+                    <div class="pdf-cover-title">IALAB - Prima Parte</div>
+                    <div class="pdf-cover-subject">Prolog e ASP</div>
+                    <div class="pdf-cover-pages">33 pages</div>
+                  </div>
+                  <div class="pdf-cover-footer">2025</div>
+                </div>
+              </div>
+
+              <div class="pdf-info">
+                <div class="pdf-title">
+                  Intelligenza Artificiale e Laboratorio - 1
+                </div>
+                <div class="pdf-meta">
+                  <span>33 pages</span>
+                </div>
+                <button class="download-btn" data-filename="IALAB-1.pdf">
+                  Download PDF
+                </button>
+              </div>
+            </div>
+
+            <div class="pdf-card">
+              <div class="pdf-preview">
+                <div class="pdf-cover cover-ialab">
+                  <div class="pdf-cover-header">PDF</div>
+                  <div class="pdf-cover-body">
+                    <div class="pdf-cover-title">IALAB - Seconda Parte</div>
+                    <div class="pdf-cover-subject">Planning</div>
+                    <div class="pdf-cover-pages">41 pages</div>
+                  </div>
+                  <div class="pdf-cover-footer">2025</div>
+                </div>
+              </div>
+
+              <div class="pdf-info">
+                <div class="pdf-title">
+                  Intelligenza Artificiale e Laboratorio - 2
+                </div>
+                <div class="pdf-meta">
+                  <span>41 pages</span>
+                </div>
+                <button class="download-btn" data-filename="IALAB-2.pdf">
+                  Download PDF
+                </button>
+              </div>
+            </div>
+
+            <div class="pdf-card">
+              <div class="pdf-preview">
+                <div class="pdf-cover cover-mcad">
+                  <div class="pdf-cover-header">PDF</div>
+                  <div class="pdf-cover-body">
+                    <div class="pdf-cover-title">MCAD</div>
+                    <div class="pdf-cover-subject">Modelli Concorrenti</div>
+                    <div class="pdf-cover-pages">63 pages</div>
+                  </div>
+                  <div class="pdf-cover-footer">2024</div>
+                </div>
+              </div>
+              <div class="pdf-info">
+                <div class="pdf-title">
+                  Modelli Concorrenti e Algoritmi Distribuiti - MC
+                </div>
+                <div class="pdf-meta">
+                  <span>63 pages</span>
+                </div>
+                <button class="download-btn" data-filename="MCAD.pdf">
+                  Download PDF
+                </button>
+              </div>
+            </div>
+
+            <div class="pdf-card">
+              <div class="pdf-preview">
+                <div class="pdf-cover cover-tln">
+                  <div class="pdf-cover-header">PDF</div>
+                  <div class="pdf-cover-body">
+                    <div class="pdf-cover-title">TLN - Prima Parte</div>
+                    <div class="pdf-cover-subject">Approccio Classico</div>
+                    <div class="pdf-cover-pages">89 pages</div>
+                  </div>
+                  <div class="pdf-cover-footer">2025</div>
+                </div>
+              </div>
+
+              <div class="pdf-info">
+                <div class="pdf-title">
+                  Tecnologie del Linguaggio Naturale - 1
+                </div>
+                <div class="pdf-meta">
+                  <span>89 pages</span>
+                </div>
+                <button class="download-btn" data-filename="TLN-1.pdf">
+                  Download PDF
+                </button>
+              </div>
+            </div>
+
+            <div class="pdf-card">
+              <div class="pdf-preview">
+                <div class="pdf-cover cover-tln">
+                  <div class="pdf-cover-header">PDF</div>
+                  <div class="pdf-cover-body">
+                    <div class="pdf-cover-title">TLN - Seconda Parte</div>
+                    <div class="pdf-cover-subject">Knowledge Base</div>
+                    <div class="pdf-cover-pages">60 pages</div>
+                  </div>
+                  <div class="pdf-cover-footer">2025</div>
+                </div>
+              </div>
+
+              <div class="pdf-info">
+                <div class="pdf-title">
+                  Tecnologie del Linguaggio Naturale - 2
+                </div>
+                <div class="pdf-meta">
+                  <span>60 pages</span>
+                </div>
+                <button class="download-btn" data-filename="TLN-2.pdf">
+                  Download PDF
+                </button>
+              </div>
+            </div>
+            <div class="pdf-card">
+              <div class="pdf-preview">
+                <div class="pdf-cover cover-tln">
+                  <div class="pdf-cover-header">PDF</div>
+                  <div class="pdf-cover-body">
+                    <div class="pdf-cover-title">TLN - Terza Parte</div>
+                    <div class="pdf-cover-subject">Approcci Stocastici</div>
+                    <div class="pdf-cover-pages">45 pages</div>
+                  </div>
+                  <div class="pdf-cover-footer">2025</div>
+                </div>
+              </div>
+
+              <div class="pdf-info">
+                <div class="pdf-title">
+                  Tecnologie del Linguaggio Naturale - 3
+                </div>
+                <div class="pdf-meta">
+                  <span>45 pages</span>
+                </div>
+                <button class="download-btn" data-filename="TLN-3.pdf">
+                  Download PDF
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- extra Section -->
+        <div id="extra-section" class="section hidden">
+          <div class="section-title">RESEARCH NOTES</div>
+
+          <div class="output">
+            <span class="prompt-user">user@docs</span
+            ><span class="prompt-symbol">:~$</span>
+            <span class="command">extra --list</span>
+          </div>
+
+          <div class="output">
+            <span class="file">No extra publications found in database.</span>
+          </div>
+
+          <div class="output">
+            <span class="directory">Status:</span> extra section under
+            development
+          </div>
+        </div>
+
+        <!-- Commands Section -->
+        <div id="commands-section" class="section hidden">
+          <div class="section-title">TERMINAL COMMANDS</div>
+
+          <div class="output">
+            <span class="prompt-user">user@docs</span
+            ><span class="prompt-symbol">:~$</span>
+            <span class="command">help</span>
+          </div>
+
+          <div class="output">Available commands:</div>
+          <div class="output">help - Show this help message</div>
+          <div class="output">clear - Clear the terminal</div>
+          <div class="output">bachelor - Show bachelor notes</div>
+          <div class="output">master - Show master notes</div>
+          <div class="output">extra - Show extra notes</div>
+          <div class="output">about - About this documentation</div>
+          <div class="output">date - Show current date and time</div>
+          <div class="output">exit - Close the terminal (not really)</div>
+        </div>
+
+        <div class="input-line">
+          <span class="prompt-user">user@docs</span
+          ><span class="prompt-symbol">:~$</span>
+          <input type="text" id="commandInput" autofocus />
+          <span class="cursor"></span>
+        </div>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>

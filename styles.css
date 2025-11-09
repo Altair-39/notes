@@ -585,6 +585,9 @@ kbd {
 .cover-storia {
   background: linear-gradient(135deg, #36454f 0%, #928e85 100%);
 }
+.cover-sisint {
+  background: linear-gradient(135deg, #ffc0cb 0%, #0080ff 100%);
+}
 .cover-mcad {
   background: linear-gradient(135deg, #00d2d3 0%, #54a0ff 100%);
 }

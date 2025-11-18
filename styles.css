@@ -573,11 +573,17 @@ kbd {
 .cover-prefit {
   background: linear-gradient(135deg, #ff6b6b 0%, #ee5a24 100%);
 }
+.cover-bd {
+  background: linear-gradient(135deg, #142883 0%, #00d2d3 100%);
+}
 .cover-lpp {
   background: linear-gradient(135deg, #4834d4 0%, #686de0 100%);
 }
 .cover-mfi {
   background: linear-gradient(135deg, #f06c7c 0%, #f0938e 100%);
+}
+.cover-so {
+  background: linear-gradient(135deg, #859021 0%, #901e21 100%);
 }
 .cover-prog3 {
   background: linear-gradient(135deg, #000080 0%, #007fff 100%);

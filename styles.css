@@ -615,6 +615,12 @@ kbd {
 .cover-tln {
   background: linear-gradient(135deg, #fdcb6e 0%, #ffeaa7 100%);
 }
+.cover-taass {
+  background: linear-gradient(135deg, #ff5600 0%, #cf0000 100%);
+}
+.cover-modsem {
+  background: linear-gradient(135deg, #ffffff 0%, #ffa3b3 100%);
+}
 
 @media (max-width: 768px) {
   .pdf-preview-container {
